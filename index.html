@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8eff6">
+<meta name="description" content="Defa Scarf - قطع صوفية يدوية، بطانيات، شالات وإكسسوارات مصنوعة بحب.">
+<title>Defa Scarf | دفء ونعومة بكل غرزة</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+:root {
+  --purple:#805c86;
+  --dark:#54385b;
+  --pink:#e6c2d5;
+  --cream:#fffaf4;
+  --pale:#f8eff6;
+  --text:#493849;
+  --muted:#8b7b89;
+  --border:#eadce8;
+  --shadow:0 12px 40px rgba(87,53,91,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:var(--cream);color:var(--text);font-family:'Cairo',sans-serif}
+body.cart-open{overflow:hidden}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;object-fit:cover}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--purple);outline-offset:3px
+}
+.container{width:min(1160px,91%);margin:auto}
+.announcement{text-align:center;padding:9px 12px;background:var(--dark);color:white;font-size:12px}
+header{position:sticky;top:0;z-index:20;background:#fffaf4f5;backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-logo{width:48px;height:48px;border-radius:50%;border:1px solid var(--pink);object-fit:contain;background:white;padding:3px}
+.brand-mark{width:47px;height:47px;display:grid;place-items:center;border:2px solid var(--pink);border-radius:50%;background:var(--pale);color:var(--purple);font:700 25px 'Playfair Display',serif}
+.brand-name{font:700 25px 'Playfair Display',serif}
+.brand-sub{font-size:9px;color:var(--muted);letter-spacing:2px}
+.nav-links{display:flex;align-items:center;gap:24px;font-size:13px}
+.nav-links a:hover,.footer-links a:hover{color:var(--purple)}
+.nav-actions{display:flex;align-items:center;gap:9px}
+.lang-btn,.icon-btn{border:1px solid var(--border);background:white;color:var(--dark);border-radius:30px;padding:9px 12px;font-size:12px}
+.icon-btn{position:relative;display:grid;place-items:center;padding:9px}
+.cart-count{position:absolute;top:-6px;right:-5px;background:var(--purple);color:white;min-width:19px;height:19px;border-radius:20px;display:grid;place-items:center;font-size:10px}
+svg{display:block;flex-shrink:0}
+.hero{padding:35px 0 55px}
+.hero-panel{overflow:hidden;min-height:440px;border-radius:25px;background:linear-gradient(110deg,#e8d4e6,#f6e6ee 48%,#fff7ef);display:grid;grid-template-columns:1fr 1fr;align-items:center}
+.hero-copy{padding:45px 9%;position:relative;z-index:1}
+.eyebrow{color:var(--purple);font-size:12px;letter-spacing:1.5px;font-weight:700}
+.hero h1{font:700 clamp(36px,5vw,61px)/1.4 'Amiri',serif;color:var(--dark);margin:15px 0}
+.hero h1 span{color:var(--purple)}
+.hero-copy p{font-size:14px;line-height:2.1;color:#6e5a6e;max-width:420px}
+.btn{border:0;border-radius:30px;padding:13px 22px;display:inline-flex;justify-content:center;align-items:center;gap:9px;background:var(--purple);color:white;font-weight:700;font-size:13px;transition:.2s}
+.btn:hover{background:var(--dark);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--purple);border:1px solid var(--purple)}
+.btn-outline:hover{color:white}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.hero-art{height:100%;min-height:350px;position:relative;background:linear-gradient(135deg,#d6bfdc,#f4dce8,#fff1e6)}
+.hero-art img{height:100%;position:absolute;inset:0}
+.hero-badge{position:absolute;bottom:25px;left:25px;background:#fffaf4ed;padding:13px 18px;border-radius:15px;font-size:12px;box-shadow:var(--shadow)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 auto 65px}
+.feature{display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 10px;border:1px solid var(--border);border-radius:15px;background:white}
+.feature-icon{color:var(--purple)}
+.feature strong{display:block;font-size:12px}
+.feature small{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+.section{padding:25px 0 70px}
+.section-heading{text-align:center;margin-bottom:30px}
+.section-heading h2,.story-copy h2,.instagram-panel h2{font-family:'Amiri',serif;color:var(--dark)}
+.section-heading h2{font-size:clamp(30px,4vw,42px);margin:8px 0}
+.section-heading p{font-size:12px;color:var(--muted)}
+.categories{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.category-btn{border:1px solid var(--border);color:var(--purple);background:white;border-radius:25px;padding:9px 19px;font-size:12px}
+.category-btn.active,.category-btn:hover{background:var(--purple);color:white;border-color:var(--purple)}
+.products-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.product-card{background:white;border:1px solid #f0e5ed;border-radius:17px;overflow:hidden;transition:.25s;min-width:0}
+.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.product-image{position:relative;aspect-ratio:4/4.5;background:linear-gradient(145deg,#f8eff6,#ead9e9);overflow:hidden;display:grid;place-items:center}
+.product-image img{height:100%;position:absolute;inset:0;transition:transform .4s}
+.product-card:hover .product-image img{transform:scale(1.04)}
+.image-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(145deg,#f8eff6,#ead9e9);color:#9b7ba0;text-align:center;padding:12px}
+.image-placeholder svg{width:43px;height:43px}
+.image-placeholder span{font-size:11px;line-height:1.8}
+.product-tag{position:absolute;top:12px;right:12px;background:#fffaf4ed;color:var(--purple);border-radius:20px;padding:5px 10px;font-size:10px;z-index:2}
+.product-info{padding:14px}
+.product-info h3{font-size:13px;margin:0 0 7px}
+.product-info p{font-size:11px;color:var(--muted);margin:0 0 13px;line-height:1.8}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.price{color:var(--dark);font-weight:800;font-size:14px;white-space:nowrap}
+.add-btn{background:var(--pale);border:0;color:var(--dark);border-radius:20px;padding:8px 11px;font-size:11px}
+.add-btn:hover{background:var(--purple);color:white}
+.story{padding:30px 0 75px}
+.story-panel{display:grid;grid-template-columns:1fr 1fr;overflow:hidden;background:var(--pale);border-radius:24px}
+.story-image{min-height:310px;background:#e8d4e6;position:relative;overflow:hidden}
+.story-image img{height:100%;position:absolute;inset:0}
+.story-copy{padding:38px;align-self:center}
+.story-copy h2{font-size:35px;margin:10px 0}
+.story-copy p{color:#766576;line-height:2.1;font-size:13px}
+.instagram-panel{padding:35px 20px;text-align:center;border:1px solid var(--border);border-radius:22px;background:white}
+.instagram-panel h2{font-size:31px;margin:10px 0}
+.instagram-panel p{font-size:12px;color:var(--muted);margin-bottom:22px}
+.social-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.social-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px}
+footer{background:#f0e3ee;padding:40px 0 18px;margin-top:65px}
+.footer-main{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+.footer-main p{font-size:12px;line-height:2;color:#79667a;max-width:330px}
+.footer-links{display:flex;gap:17px;flex-wrap:wrap;font-size:12px;align-items:center}
+.copyright{border-top:1px solid #dfcddd;margin-top:25px;padding-top:15px;text-align:center;font-size:10px;color:var(--muted)}
+.overlay{position:fixed;inset:0;z-index:40;background:#28182a73;opacity:0;visibility:hidden;transition:.25s}
+.overlay.open{opacity:1;visibility:visible}
+.cart-drawer{position:fixed;top:0;bottom:0;right:0;z-index:41;width:min(440px,100%);background:var(--cream);padding:22px;overflow-y:auto;transform:translateX(105%);transition:transform .3s}
+.cart-drawer.open{transform:translateX(0)}
+html[dir="ltr"] .cart-drawer{right:auto;left:0;transform:translateX(-105%)}
+html[dir="ltr"] .cart-drawer.open{transform:translateX(0)}
+.cart-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:15px}
+.cart-head h2,.checkout h3{font:700 27px 'Amiri',serif;margin:0}
+.close-btn{border:0;background:var(--pale);border-radius:50%;width:38px;height:38px;font-size:23px;color:var(--purple)}
+.cart-item{display:grid;grid-template-columns:75px 1fr auto;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--border)}
+.cart-thumb{width:75px;height:82px;border-radius:10px;overflow:hidden;position:relative;background:var(--pale)}
+.cart-thumb img{width:100%;height:100%}
+.cart-thumb .image-placeholder{gap:4px;padding:4px}
+.cart-thumb .image-placeholder svg{width:22px;height:22px}
+.cart-thumb .image-placeholder span{font-size:8px}
+.cart-item h4{font-size:12px;margin:0 0 5px}
+.cart-item .price{font-size:12px}
+.qty{display:flex;align-items:center;gap:10px;margin-top:8px}
+.qty button{width:25px;height:25px;border:1px solid var(--border);background:white;border-radius:50%;color:var(--purple)}
+.remove-btn{border:0;background:none;color:#a77e9f;font-size:19px}
+.cart-empty{text-align:center;padding:45px 10px;color:var(--muted);font-size:13px;line-height:2}
+.cart-summary{border-top:1px solid var(--border);padding-top:18px}
+.total-row{display:flex;justify-content:space-between;font-size:14px;margin-bottom:17px}
+.cart-summary .btn{width:100%}
+.checkout{margin-top:22px;padding-top:20px;border-top:1px dashed var(--border)}
+.checkout h3{margin-bottom:12px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:11px;margin-bottom:5px}
+.field input,.field textarea{width:100%;border:1px solid var(--border);background:white;border-radius:10px;padding:11px 12px;font-size:12px}
+.field textarea{resize:vertical;min-height:70px}
+.checkout-note{font-size:10px;color:var(--muted);line-height:1.8}
+.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);z-index:60;background:var(--dark);color:white;padding:12px 20px;border-radius:30px;font-size:12px;opacity:0;pointer-events:none;transition:.25s;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.whatsapp-float{position:fixed;bottom:20px;left:20px;z-index:15;width:56px;height:56px;display:grid;place-items:center;border-radius:50%;background:#25D366;color:white;box-shadow:0 5px 20px #25d36655;transition:.2s}
+.whatsapp-float:hover{transform:translateY(-4px) scale(1.04)}
+[hidden]{display:none!important}
+html[dir="ltr"] .hero h1,html[dir="ltr"] .section-heading h2,html[dir="ltr"] .story-copy h2,html[dir="ltr"] .instagram-panel h2,html[dir="ltr"] .cart-head h2,html[dir="ltr"] .checkout h3{font-family:'Playfair Display',serif}
+html[dir="ltr"] .product-tag{right:auto;left:12px}
+html[dir="ltr"] .hero-badge{left:auto;right:25px}
+@media(max-width:900px){
+ .nav-links{gap:12px}
+ .products-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ .hero-panel{min-height:380px}
+ .hero-copy{padding:30px 7%}
+ .brand-name{font-size:21px}
+}
+@media(max-width:600px){
+ .announcement{font-size:10px}
+ .nav{min-height:70px;gap:8px}
+ .brand{gap:6px}
+ .brand-logo,.brand-mark{width:38px;height:38px}
+ .brand-name{font-size:18px}
+ .brand-sub{font-size:7px;letter-spacing:1px}
+ .nav-links{display:none}
+ .nav-actions{gap:5px}
+ .lang-btn{padding:8px 9px;font-size:10px}
+ .hero{padding:18px 0 35px}
+ .hero-panel{grid-template-columns:1fr}
+ .hero-copy{padding:28px 23px 22px}
+ .hero h1{font-size:40px;margin:9px 0}
+ .hero-copy p{font-size:12px}
+ .hero-art{min-height:250px}
+ .hero-badge{bottom:13px;left:13px;font-size:10px}
+ .features{gap:7px;margin-bottom:38px}
+ .feature{flex-direction:column;text-align:center;gap:5px;padding:12px 5px}
+ .feature strong{font-size:10px}
+ .feature small{font-size:9px}
+ .section{padding-bottom:45px}
+ .products-grid{gap:10px}
+ .product-info{padding:10px}
+ .product-info h3{font-size:11px}
+ .product-info p{font-size:10px}
+ .product-bottom{align-items:flex-start;flex-direction:column}
+ .add-btn{width:100%}
+ .price{font-size:13px}
+ .story-panel{grid-template-columns:1fr}
+ .story-image{min-height:230px}
+ .story-copy{padding:24px}
+ .story-copy h2{font-size:30px}
+ .footer-main{flex-direction:column}
+}
+
+/* Modern social media icons */
+.social-btn {
+  min-height: 48px;
+  padding: 13px 22px;
+  gap: 10px;
+  border-radius: 30px;
+  transition: transform .25s ease,
+              box-shadow .25s ease,
+              background .25s ease;
+}
+
+.social-btn i {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.instagram-btn {
+  background: linear-gradient(
+    135deg,
+    #805c86,
+    #b46b91,
+    #d89a9f
+  );
+  color: #fff;
+}
+
+.instagram-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #68466f,
+    #965579,
+    #c17f89
+  );
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: #fff;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+.whatsapp-float {
+  width: 58px;
+  height: 58px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, .28);
+}
+
+.whatsapp-float i {
+  font-size: 31px;
+  line-height: 1;
+}
+
+.social-btn:hover,
+.whatsapp-float:hover {
+  transform: translateY(-3px);
+}
+
+.business-card-section {
+  direction: rtl;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 35px;
+  padding: 55px 7%;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #fbf5f8, #f0e3ee);
+  border-radius: 28px;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.business-card-content {
+  text-align: center;
+}
+
+.business-card-content .card-subtitle {
+  color: #936b8b;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.business-card-content h2 {
+  color: #684563;
+  font-size: clamp(23px, 3vw, 34px);
+  margin: 14px 0;
+}
+
+.business-card-content p {
+  color: #80667b;
+  margin-bottom: 24px;
+}
+
+.business-card-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  margin: 12px auto;
+  max-width: 280px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform .25s ease;
+}
+
+.business-card-content a:hover {
+  transform: translateY(-3px);
+}
+
+.card-instagram {
+  color: white;
+  background: linear-gradient(135deg, #785477, #bd819f);
+}
+
+.card-whatsapp {
+  color: white;
+  background: #25D366;
+}
+
+.business-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px #68456320;
+}
+
+@media (max-width: 700px) {
+  .business-card-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="announcement" data-i18n="announcement">✨ دفء مصنوع بحب، ونعومة تستحقينها ✨</div>
+
+<header>
+ <div class="container nav">
+  <a href="#home" class="brand" aria-label="Defa Scarf">
+   <img class="brand-logo" src="logo.png" alt="Defa Scarf Logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+   <div class="brand-mark" hidden>D</div>
+   <div><div class="brand-name">Defa Scarf</div><div class="brand-sub">SCARF & ACCESSORIES</div></div>
+  </a>
+  <nav class="nav-links">
+   <a href="#home" data-i18n="navHome">الرئيسية</a>
+   <a href="#shop" data-i18n="navShop">المتجر</a>
+   <a href="#story" data-i18n="navStory">حكايتنا</a>
+   <a href="#contact" data-i18n="navContact">تواصل معنا</a>
+  </nav>
+  <div class="nav-actions">
+   <button class="lang-btn" id="langToggle" type="button">Türkçe 🇹🇷</button>
+   <button class="icon-btn" id="openCart" type="button" aria-label="فتح السلة">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+    <span class="cart-count" id="cartCount">0</span>
+   </button>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-panel">
+ <div class="hero-copy">
+  <div class="eyebrow" data-i18n="heroEyebrow">HANDMADE WITH LOVE ♡</div>
+  <h1 data-i18n="heroTitle">دفء يلامس قلبك <br><span>ونعومة تشبهك</span></h1>
+  <p data-i18n="heroDesc">من خيوط الصوف الناعمة نصنع لك قطعًا مميزة، تحمل دفء اليد وحب التفاصيل في كل غرزة.</p>
+  <div class="hero-buttons">
+   <a class="btn" href="#shop" data-i18n="shopNow">تسوّقي الآن ↙</a>
+   <a class="btn btn-outline" href="#story" data-i18n="discover">اكتشفي حكايتنا</a>
+  </div>
+ </div>
+ <div class="hero-art">
+  <img src="125.jpg" alt="مجموعة Defa Scarf" onerror="this.hidden=true">
+  <div class="hero-badge" data-i18n="heroBadge">♡ تفاصيل صغيرة، دفء كبير</div>
+ </div>
+</div></div></section>
+
+<div class="container features">
+ <div class="feature"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 8a5 5 0 0 0-9-3 5 5 0 0 0-9 3c0 6 9 13 9 13s9-7 9-13Z"/><path d="M3 12h4l2-4 4 8 2-4h5"/></svg></div><div><strong data-i18n="feature1">صوف ناعم</strong><small data-i18n="feature1sub">ملمس دافئ ومريح</small></div></div>
+ <div class="feature"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></div><div><strong data-i18n="feature2">صنع بحب</strong><small data-i18n="feature2sub">اهتمام بكل غرزة</small></div></div>
+ <div class="feature"><div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 2.5-2.5C10 6 12 7 12 7Zm0 0h4.5A2.5 2.5 0 1 0 14 4.5C14 6 12 7 12 7Z"/></svg></div><div><strong data-i18n="feature3">هدية مميزة</strong><small data-i18n="feature3sub">لمسة جميلة لمن تحبين</small></div></div>
+</div>
+
+<section class="section" id="shop"><div class="container">
+ <div class="section-heading">
+  <div class="eyebrow" data-i18n="shopEyebrow">OUR COZY COLLECTION</div>
+  <h2 data-i18n="shopTitle">اختاري دفئك المفضل</h2>
+  <p data-i18n="shopDesc">قطع صوفية ناعمة، بألوان تحبينها وتفاصيل لا تُنسى.</p>
+ </div>
+ <div class="categories" id="categories">
+  <button class="category-btn active" data-category="all" data-i18n="catAll">جميع المنتجات</button>
+  <button class="category-btn" data-category="blankets" data-i18n="catBlankets">بطانيات</button>
+  <button class="category-btn" data-category="scarves" data-i18n="catScarves">شالات وأوشحة</button>
+  <button class="category-btn" data-category="accessories" data-i18n="catAccessories">إكسسوارات</button>
+  <button class="category-btn" data-category="yarn" data-i18n="catYarn">خيوط صوف</button>
+ </div>
+ <div class="products-grid" id="productsGrid"></div>
+</div></section>
+
+<section class="story" id="story"><div class="container"><div class="story-panel">
+ <div class="story-image">
+  <img src="0df30c8aa78e5b46ddacde2a3f801528.jpg" alt="حكاية Defa Scarf" onerror="this.hidden=true">
+ </div>
+ <div class="story-copy">
+  <div class="eyebrow" data-i18n="storyEyebrow">THE STORY OF DEFA</div>
+  <h2 data-i18n="storyTitle">كل غرزة لها حكاية ♡</h2>
+  <p data-i18n="storyDesc">في Defa Scarf نؤمن أن أجمل الأشياء هي التي تُصنع بحب. نختار الخيوط الناعمة ونحوّلها إلى قطع تمنحك الدفء والراحة والجمال.</p>
+  <a href="#shop" class="btn" data-i18n="storyButton">اكتشفي المجموعة</a>
+ </div>
+</div></div></section>
+
+<section class="section" id="contact"><div class="container"><div class="instagram-panel">
+ <div class="eyebrow">LET'S BE FRIENDS ♡</div>
+ <h2 data-i18n="socialTitle">تابعينا على إنستغرام</h2>
+ <p data-i18n="socialDesc">شاهدي أحدث الألوان والأعمال الجديدة وكوني جزءًا من عالم Defa Scarf.</p>
+ <div class="social-links">
+ <a class="btn social-btn instagram-btn"
+   href="https://instagram.com/defa.scarf.tr"
+   target="_blank"
+   rel="noopener noreferrer">
+
+  <i class="fa-brands fa-instagram"
+     aria-hidden="true"></i>
+
+  <span>@defa.scarf.tr</span>
+</a>
+  <a class="btn social-btn whatsapp-btn"
+   href="https://wa.me/905550897483"
+   target="_blank"
+   rel="noopener noreferrer">
+
+  <i class="fa-brands fa-whatsapp"
+     aria-hidden="true"></i>
+
+  <span>WhatsApp</span>
+</a>
+
+ </div>
+</div></div></section>
+</main>
+
+
+
+
+<section class="business-card-section" id="business-card">
+  <div class="business-card-content">
+
+    <span class="card-subtitle">DEFA SCARF</span>
+
+    <h2 data-i18n="businessCardTitle">
+      بطاقة متجرنا
+    </h2>
+
+    <p data-i18n="businessCardDesc">
+      دفء ونعومة بكل غرزة 💜
+    </p>
+
+    <p data-i18n="businessCardNote">
+      ملاحظة: الأسعار النهائية وتأكيد الطلب والدفع والتوصيل يتم الاتفاق عليها.
+    </p>
+
+  </div>
+
+  <div class="business-card-image">
+    <img
+      src="defa-business-card.png.png"
+      alt="Defa Scarf"
+      loading="lazy">
+  </div>
+</section>
+
+
+<style>
+.business-card-section {
+  direction: rtl;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 35px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #fbf5f8, #f0e3ee);
+  box-sizing: border-box;
+}
+
+.business-card-content {
+  text-align: center;
+}
+
+.card-subtitle {
+  color: #936b8b;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.business-card-content h2 {
+  color: #684563;
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.business-card-content p {
+  color: #80667b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.business-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(104, 69, 99, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.business-card-image img:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 700px) {
+  .business-card-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px 15px;
+    padding: 22px;
+  }
+
+  .business-card-content h2 {
+    font-size: 25px;
+  }
+
+  .business-card-content p {
+    font-size: 15px;
+  }
+}
+</style>
+
+<footer><div class="container"><div class="footer-main">
+ <div><a href="#home" class="brand">
+  <img class="brand-logo" src="logo.png" alt="Defa Scarf Logo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+  <div class="brand-mark" hidden>D</div>
+  <div><div class="brand-name">Defa Scarf</div><div class="brand-sub">SCARF & ACCESSORIES</div></div>
+ </a>
+ <p data-i18n="footerDesc">دفء ونعومة بكل غرزة. قطع صوفية يدوية صنعت لتضيف لمسة دافئة إلى يومك.</p>
+ </div>
+ <div class="footer-links">
+  <a href="#shop" data-i18n="navShop">المتجر</a>
+  <a href="#story" data-i18n="navStory">حكايتنا</a>
+  <a href="https://instagram.com/defa.scarf.tr" target="_blank" rel="noopener noreferrer">Instagram</a>
+  <a href="https://wa.me/905550897483" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+ </div>
+</div>
+<div class="copyright">© <span id="year"></span> Defa Scarf. <span data-i18n="rights">جميع الحقوق محفوظة.</span></div>
+</div></footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/905550897483"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="WhatsApp">
+
+  <i class="fa-brands fa-whatsapp"
+     aria-hidden="true"></i>
+</a>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-modal="true" role="dialog">
+ <div class="cart-head">
+  <h2 data-i18n="cartTitle">سلة مشترياتك ♡</h2>
+  <button class="close-btn" id="closeCart" type="button" aria-label="إغلاق">×</button>
+ </div>
+ <div id="cartItems"></div>
+ <div class="cart-summary" id="cartSummary" hidden>
+  <div class="total-row"><span data-i18n="subtotal">المجموع</span><strong class="price" id="cartTotal">₺0</strong></div>
+  <button class="btn" id="goCheckout" type="button" data-i18n="checkoutButton">إتمام الطلب عبر واتساب ←</button>
+ </div>
+ <form class="checkout" id="checkoutForm" hidden>
+  <h3 data-i18n="checkoutTitle">بيانات التوصيل</h3>
+  <div class="field"><label for="customerName" data-i18n="nameLabel">الاسم الكامل *</label><input id="customerName" name="name" required autocomplete="name" placeholder="الاسم"></div>
+  <div class="field"><label for="customerPhone" data-i18n="phoneLabel">رقم الهاتف *</label><input id="customerPhone" name="phone" required type="tel" autocomplete="tel" placeholder="+90 5XX XXX XX XX"></div>
+  <div class="field"><label for="customerAddress" data-i18n="addressLabel">عنوان التوصيل *</label><textarea id="customerAddress" name="address" required autocomplete="street-address" placeholder="المدينة والحي والعنوان"></textarea></div>
+  <div class="field"><label for="customerNote" data-i18n="noteLabel">ملاحظات إضافية</label><textarea id="customerNote" name="note" placeholder="اللون المطلوب أو أي ملاحظات..."></textarea></div>
+  <p class="checkout-note" data-i18n="checkoutNote">سيتم فتح واتساب برسالة تحتوي على تفاصيل طلبك. 
+    لن يُرسل الطلب إلا بعد ضغطك على إرسال داخل واتساب.
+ </p>
+  <button class="btn" style="width:100%" type="submit" data-i18n="sendOrder" >إرسال الطلب إلى واتساب </button>
+ </form>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+
+
+
+/* إعدادات المتجر */
+const STORE = {
+  whatsapp: "905550897483",
+  instagram: "https://instagram.com/defa.scarf.tr"
+};
+
+/*
+  أسماء الصور مأخوذة من الكود الأصلي.
+  ضعي هذه الملفات بجانب index.html. 
+  إذا كانت الصور داخل مجلد آخر، عدّلي المسارات هنا فقط.
+*/
+const PRODUCTS = [
+ {id:1,category:"blankets",price:850,tag:"bestseller",image:"هخ.jpg",
+  name:{ar:"بطانية صوف منفوشة",tr:"Peluş Örgü Battaniye"},
+  desc:{ar:"ناعمة ودافئة للمسة مريحة",tr:"Yumuşak ve sıcak, konforlu dokunuş"}},
+
+ {id:2,category:"scarves",price:450,tag:"popular",image:"lliuug.jpg",
+  name:{ar:"شال صوفي ناعم",tr:"Yumuşak Örgü Şal"},
+  desc:{ar:"أناقة ودفء في قطعة واحدة",tr:"Tek parçada şıklık ve sıcaklık"}},
+
+ {id:3,category:"accessories",price:180,tag:"new",image:"ريطات.jpg",
+  name:{ar:"ربطات شعر صوف",tr:"Örgü Saç Tokaları"},
+  desc:{ar:"تفاصيل صغيرة بطابع لطيف",tr:"Sevimli ve özel örgü detayları"}},
+
+ {id:4,category:"yarn",price:220,tag:"popular",image:"خيوط.jpg",
+  name:{ar:"خيوط صوف للمشغولات",tr:"El Örgüsü İpi"},
+  desc:{ar:"اختاري خيوطك لمشروعك القادم",tr:"Yeni projen için yumuşak ipler"}},
+
+ {id:5,category:"blankets",price:990,tag:"new",image:"موف.jpg",
+  name:{ar:"بطانية بلون الموف",tr:"Lila Örgü Battaniye"},
+  desc:{ar:"لون هادئ وملمس مميز",tr:"Zarif renk ve özel doku"}},
+
+ {id:6,category:"scarves",price:850,tag:"bestseller",image:"و.jpg",
+  name:{ar:"وشاح شتوي أنيق",tr:"Şık Kışlık Atkı"},
+  desc:{ar:"رفيقك الدافئ في الأيام الباردة",tr:"Soğuk günlerde sıcak eşlikçin"}},
+
+ {id:7,category:"accessories",price:700,tag:"new",image:"هد.jpg",
+  name:{ar:"قطعة صوفية هدية",tr:"Örgü Hediye Aksesuarı"},
+  desc:{ar:"هدية لطيفة مصنوعة بحب",tr:"Sevgiyle hazırlanmış küçük bir hediye"}},
+
+ {id:8,category:"blankets",price:1200,tag:"bestseller",image:"كمت.jpg",
+  name:{ar:"بطانية دافئة فاخرة",tr:"Lüks Sıcak Battaniye"},
+  desc:{ar:"راحة ودفء لتفاصيل منزلك",tr:"Evin için konfor ve sıcaklık"}}
+];
+
+const TEXT = {
+ ar:{
+  announcement:"✨ دفء مصنوع بحب، ونعومة تستحقينها ✨",
+  navHome:"الرئيسية",navShop:"المتجر",navStory:"حكايتنا",navContact:"تواصل معنا",
+  heroEyebrow:"HANDMADE WITH LOVE ♡",
+  heroTitle:"دفء يلامس قلبك،<br><span>ونعومة تشبهك</span>",
+  heroDesc:"من خيوط الصوف الناعمة نصنع لك قطعًا مميزة، تحمل دفء اليد وحب التفاصيل في كل غرزة.",
+  shopNow:"تسوّقي الآن ↙",discover:"اكتشفي حكايتنا",
+  heroBadge:"♡ تفاصيل صغيرة، دفء كبير",
+  feature1:"صوف ناعم",feature1sub:"ملمس دافئ ومريح",
+  feature2:"صنع بحب",feature2sub:"اهتمام بكل غرزة",
+  feature3:"هدية مميزة",feature3sub:"لمسة جميلة لمن تحبين",
+  shopEyebrow:"OUR COZY COLLECTION",
+  shopTitle:"اختاري دفئك المفضل",
+  shopDesc:"قطع صوفية ناعمة، بألوان تحبينها وتفاصيل لا تُنسى.",
+  catAll:"جميع المنتجات",catBlankets:"بطانيات",
+  catScarves:"شالات وأوشحة",catAccessories:"إكسسوارات",catYarn:"خيوط صوف",
+  add:"أضيفي للسلة +",tagNew:"جديد",tagPopular:"مميز",tagBestseller:"الأكثر طلبًا",
+  storyEyebrow:"THE STORY OF DEFA",storyTitle:"كل غرزة لها حكاية ♡",
+  storyDesc:"في Defa Scarf نؤمن أن أجمل الأشياء هي التي تُصنع بحب. نختار الخيوط الناعمة ونحوّلها إلى قطع تمنحك الدفء والراحة والجمال.",
+  storyButton:"اكتشفي المجموعة",
+  socialTitle:"تابعينا على إنستغرام",
+  socialDesc:"شاهدي أحدث الألوان والأعمال الجديدة وكوني جزءًا من عالم Defa Scarf.",
+  footerDesc:"دفء ونعومة بكل غرزة. قطع صوفية يدوية صنعت لتضيف لمسة دافئة إلى يومك.",
+  rights:"جميع الحقوق محفوظة.",
+  cartTitle:"سلة مشترياتك ♡",emptyCart:"سلتك فارغة حاليًا ♡",
+  subtotal:"المجموع",checkoutButton:"إتمام الطلب عبر واتساب ←",
+  checkoutTitle:"بيانات التوصيل",nameLabel:"الاسم الكامل *",
+  phoneLabel:"رقم الهاتف *",addressLabel:"عنوان التوصيل *",noteLabel:"ملاحظات إضافية",
+  checkoutNote:"سيتم فتح واتساب برسالة تحتوي على تفاصيل طلبك. لن يُرسل الطلب إلا بعد ضغطك على إرسال داخل واتساب.",
+  sendOrder:"إرسال الطلب إلى واتساب ♡",
+  emptyProducts:"لا توجد منتجات في هذا القسم.",
+  added:"تمت إضافة المنتج إلى السلة ♡",removed:"تم حذف المنتج من السلة.",
+  waIntro:"مرحبًا Defa Scarf! أود تأكيد طلبي:",
+  waName:"الاسم",waPhone:"رقم الهاتف",waAddress:"العنوان",
+  waNote:"ملاحظات",waTotal:"الإجمالي",waThanks:"شكرًا لكم ♡",
+  invalidPhone:"يرجى إدخال رقم هاتف صحيح.",
+  currency:"₺",orderItems:"المنتجات",quantity:"الكمية",
+ businessCardTitle: "بطاقة متجرنا",
+ businessCardDesc: "دفء ونعومة بكل غرزة 💜",
+ businessCardNote: "ملاحظة: الأسعار النهائية وتأكيد الطلب والدفع والتوصيل يتم الاتفاق عليها.",
+ },
+
+
+
+ tr:{
+  announcement:"✨ Sevgiyle örülen sıcaklık ve yumuşaklık ✨",
+  navHome:"Ana Sayfa",navShop:"Mağaza",navStory:"Hikâyemiz",navContact:"İletişim",
+  heroEyebrow:"HANDMADE WITH LOVE ♡",
+  heroTitle:"Kalbine dokunan sıcaklık,<br><span>sana özel yumuşaklık</span>",
+  heroDesc:"Yumuşacık örgü iplerinden, el emeği ve sevgiyle hazırlanmış özel parçalar.",
+  shopNow:"Alışverişe başla ↙",discover:"Hikâyemizi keşfet",
+  heroBadge:"♡ Küçük detaylar, büyük sıcaklık",
+  feature1:"Yumuşak iplik",feature1sub:"Sıcak ve rahat doku",
+  feature2:"Sevgiyle hazırlandı",feature2sub:"Her ilmekte özen",
+  feature3:"Özel hediye",feature3sub:"Sevdiklerine güzel bir dokunuş",
+  shopEyebrow:"OUR COZY COLLECTION",
+  shopTitle:"Favori sıcaklığını seç",
+  shopDesc:"Yumuşak örgüler, sevdiğin renkler ve unutulmaz detaylar.",
+  catAll:"Tüm Ürünler",catBlankets:"Battaniyeler",
+  catScarves:"Şal ve Atkılar",catAccessories:"Aksesuarlar",catYarn:"Örgü İpleri",
+  add:"Sepete ekle +",tagNew:"Yeni",tagPopular:"Özel",tagBestseller:"Çok sevilen",
+  storyEyebrow:"THE STORY OF DEFA",
+  storyTitle:"Her ilmeğin bir hikâyesi var ♡",
+  storyDesc:"Defa Scarf olarak en güzel şeylerin sevgiyle hazırlandığına inanıyoruz. Yumuşak ipleri özenle seçiyor, her gününe sıcaklık ve güzellik katacak özel parçalara dönüştürüyoruz.",
+  storyButton:"Koleksiyonu keşfet",
+  socialTitle:"Instagram'da bizi takip et",
+  socialDesc:"Yeni renkleri, el emeği ürünleri ve Defa Scarf dünyasını keşfet.",
+  footerDesc:"Her ilmekte sıcaklık ve yumuşaklık. Gününe güzellik katmak için sevgiyle örüldü.",
+  rights:"Tüm hakları saklıdır.",
+  cartTitle:"Alışveriş Sepetin ♡",emptyCart:"Sepetin şu an boş ♡",
+  subtotal:"Toplam",checkoutButton:"WhatsApp ile sipariş ver ←",
+  checkoutTitle:"Teslimat bilgileri",nameLabel:"Ad soyad *",
+  phoneLabel:"Telefon numarası *",addressLabel:"Teslimat adresi *",noteLabel:"Ek notlar",
+  checkoutNote:"WhatsApp, sipariş detayların hazır mesaj olarak açılacaktır. Siparişin gönderilmesi için WhatsApp'ta gönder tuşuna basmalısın.",
+  sendOrder:"Siparişi WhatsApp'a gönder ♡",
+  emptyProducts:"Bu kategoride ürün bulunamadı.",
+  added:"Ürün sepete eklendi ♡",removed:"Ürün sepetten kaldırıldı.",
+  waIntro:"Merhaba Defa Scarf! Sipariş vermek istiyorum:",
+  waName:"Ad soyad",waPhone:"Telefon",waAddress:"Adres",
+  waNote:"Not",waTotal:"Toplam",waThanks:"Teşekkürler ♡",
+  invalidPhone:"Lütfen geçerli bir telefon numarası gir.",
+  currency:"TL",orderItems:"Ürünler",quantity:"Adet",
+  businessCardTitle: "Mağaza Kartımız",
+  businessCardDesc: "Her ilmekte sıcaklık ve yumuşaklık 💜",
+  businessCardNote: "Not: Nihai fiyatlar, sipariş onayı, ödeme ve teslimat detayları karşılıklı olarak kararlaştırılır.",
+}
+};
+
+
+let lang="ar";
+let activeCategory="all";
+let cart=[];
+
+const $=id=>document.getElementById(id);
+const tr=key=>TEXT[lang][key]||key;
+const productName=p=>p.name[lang];
+const productDesc=p=>p.desc[lang];
+
+const money=n=>new Intl.NumberFormat(
+ lang==="ar"?"ar-TR":"tr-TR",
+ {maximumFractionDigits:2}
+).format(n)+" "+tr("currency");
+
+const safeText=s=>String(s).replace(/[&<>"']/g,c=>({
+ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+}[c]));
+
+function placeholder(label){
+ return `<div class="image-placeholder" hidden>
+ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+ <rect x="3" y="3" width="18" height="18" rx="3"/>
+ <circle cx="8.5" cy="8.5" r="1.5"/>
+ <path d="m21 15-5-5L5 21"/>
+ </svg>
+ <span>${safeText(label)}</span></div>`;
+}
+
+function renderProducts(){
+ const products=PRODUCTS.filter(p=>
+  activeCategory==="all"||p.category===activeCategory
+ );
+
+ $("productsGrid").innerHTML=products.length
+ ?products.map(p=>`
+  <article class="product-card">
+   <div class="product-image">
+    <img src="${safeText(p.image)}"
+      alt="${safeText(productName(p))}"
+      loading="lazy"
+      onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    ${placeholder(lang==="ar"?"صورة المنتج "+p.id:"Ürün fotoğrafı "+p.id)}
+    <span class="product-tag">${safeText(tr(
+      p.tag==="new"?"tagNew":
+      p.tag==="popular"?"tagPopular":"tagBestseller"
+    ))}</span>
+   </div>
+   <div class="product-info">
+    <h3>${safeText(productName(p))}</h3>
+    <p>${safeText(productDesc(p))}</p>
+    <div class="product-bottom">
+     <span class="price">${money(p.price)}</span>
+     <button class="add-btn" type="button" data-add="${p.id}">
+      ${safeText(tr("add"))}
+     </button>
+    </div>
+   </div>
+  </article>`).join("")
+ :`<p>${safeText(tr("emptyProducts"))}</p>`;
+}
+
+function addToCart(id){
+ const p=PRODUCTS.find(x=>x.id===id);
+ if(!p)return;
+ const item=cart.find(x=>x.id===id);
+ if(item)item.qty++;
+ else cart.push({id,qty:1});
+ renderCart();
+ showToast(tr("added"));
+}
+
+function changeQty(id,n){
+ const item=cart.find(x=>x.id===id);
+ if(!item)return;
+ item.qty+=n;
+ if(item.qty<=0)cart=cart.filter(x=>x.id!==id);
+ renderCart();
+}
+
+function removeFromCart(id){
+ cart=cart.filter(x=>x.id!==id);
+ renderCart();
+ showToast(tr("removed"));
+}
+
+function total(){
+ return cart.reduce((sum,item)=>{
+  const p=PRODUCTS.find(x=>x.id===item.id);
+  return sum+(p?p.price*item.qty:0);
+ },0);
+}
+
+function renderCart(){
+ $("cartCount").textContent=cart.reduce((sum,i)=>sum+i.qty,0);
+ $("cartSummary").hidden=!cart.length;
+ $("checkoutForm").hidden=!cart.length;
+
+ $("cartItems").innerHTML=cart.length?cart.map(item=>{
+  const p=PRODUCTS.find(x=>x.id===item.id);
+  if(!p)return "";
+
+  return `<div class="cart-item">
+   <div class="cart-thumb">
+    <img src="${safeText(p.image)}" alt="${safeText(productName(p))}"
+     onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    ${placeholder(productName(p))}
+   </div>
+   <div>
+    <h4>${safeText(productName(p))}</h4>
+    <div class="price">${money(p.price*item.qty)}</div>
+    <div class="qty">
+     <button type="button" data-qty="${p.id}" data-change="-1" aria-label="Decrease">−</button>
+     <span>${item.qty}</span>
+     <button type="button" data-qty="${p.id}" data-change="1" aria-label="Increase">+</button>
+    </div>
+   </div>
+   <button type="button" class="remove-btn" data-remove="${p.id}" aria-label="Remove">×</button>
+  </div>`;
+ }).join("")
+ :`<div class="cart-empty">♡<br>${safeText(tr("emptyCart"))}</div>`;
+
+ $("cartTotal").textContent=money(total());
+}
+
+function openCart(){
+ $("overlay").classList.add("open");
+ $("cartDrawer").classList.add("open");
+ document.body.classList.add("cart-open");
+ $("closeCart").focus();
+}
+
+function closeCart(){
+ $("overlay").classList.remove("open");
+ $("cartDrawer").classList.remove("open");
+ document.body.classList.remove("cart-open");
+ $("openCart").focus();
+}
+
+let toastTimer;
+function showToast(message){
+ $("toast").textContent=message;
+ $("toast").classList.add("show");
+ clearTimeout(toastTimer);
+ toastTimer=setTimeout(()=>$("toast").classList.remove("show"),2400);
+}
+
+function applyLanguage(){
+ document.documentElement.lang=lang;
+ document.documentElement.dir=lang==="ar"?"rtl":"ltr";
+ document.title=lang==="ar"
+  ?"Defa Scarf | دفء ونعومة بكل غرزة"
+  :"Defa Scarf | Sıcaklık ve Yumuşaklık";
+
+ document.querySelectorAll("[data-i18n]").forEach(el=>{
+  const key=el.dataset.i18n;
+  if(TEXT[lang][key])el.innerHTML=TEXT[lang][key];
+ });
+
+ $("langToggle").textContent=lang==="ar"?"Türkçe 🇹🇷":"العربية 🇸🇦";
+
+ document.querySelectorAll(".category-btn").forEach(btn=>{
+  btn.classList.toggle("active",btn.dataset.category===activeCategory);
+ });
+
+ $("customerName").placeholder=lang==="ar"?"الاسم":"Ad soyad";
+ $("customerAddress").placeholder=lang==="ar"
+  ?"المدينة والحي والعنوان":"Şehir, mahalle ve açık adres";
+ $("customerNote").placeholder=lang==="ar"
+  ?"اللون المطلوب أو أي ملاحظات...":"Renk tercihi veya ek notlar...";
+
+ renderProducts();
+ renderCart();
+}
+
+function openWhatsApp(message){
+ const url="https://wa.me/"+STORE.whatsapp+"?text="+encodeURIComponent(message);
+ const win=window.open(url,"_blank");
+ if(win)win.opener=null;
+ else window.location.href=url;
+}
+
+/* أحداث المنتجات */
+$("productsGrid").addEventListener("click",e=>{
+ const button=e.target.closest("[data-add]");
+ if(button)addToCart(Number(button.dataset.add));
+});
+
+/* تصفية الفئات */
+$("categories").addEventListener("click",e=>{
+ const button=e.target.closest("[data-category]");
+ if(!button)return;
+ activeCategory=button.dataset.category;
+ document.querySelectorAll(".category-btn").forEach(b=>
+  b.classList.toggle("active",b===button)
+ );
+ renderProducts();
+});
+
+/* التحكم في السلة */
+$("cartItems").addEventListener("click",e=>{
+ const quantityButton=e.target.closest("[data-qty]");
+ const removeButton=e.target.closest("[data-remove]");
+
+ if(quantityButton){
+  changeQty(
+   Number(quantityButton.dataset.qty),
+   Number(quantityButton.dataset.change)
+  );
+ }
+ if(removeButton)removeFromCart(Number(removeButton.dataset.remove));
+});
+
+$("openCart").addEventListener("click",openCart);
+$("closeCart").addEventListener("click",closeCart);
+$("overlay").addEventListener("click",closeCart);
+
+$("goCheckout").addEventListener("click",()=>{
+ $("checkoutForm").hidden=false;
+ $("checkoutForm").scrollIntoView({behavior:"smooth",block:"start"});
+ $("customerName").focus({preventScroll:true});
+});
+
+$("langToggle").addEventListener("click",()=>{
+ lang=lang==="ar"?"tr":"ar";
+ applyLanguage();
+});
+
+/* تجهيز الطلب وإرساله عبر واتساب */
+$("checkoutForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ if(!cart.length)return;
+
+ const name=$("customerName").value.trim();
+ const phone=$("customerPhone").value.trim();
+ const address=$("customerAddress").value.trim();
+ const note=$("customerNote").value.trim();
+
+ if(!name||!phone||!address){
+  showToast(tr("invalidPhone"));
+  return;
+ }
+
+ const normalizedPhone=phone.replace(/[\s()+.-]/g,"");
+ if(!/^\d{10,15}$/.test(normalizedPhone)){
+  showToast(tr("invalidPhone"));
+  $("customerPhone").focus();
+  return;
+ }
+
+ const lines=cart.map(item=>{
+  const p=PRODUCTS.find(x=>x.id===item.id);
+  return `• ${productName(p)} × ${item.qty} = ${money(p.price*item.qty)}`;
+ });
+
+ const message=[
+  tr("waIntro"),
+  "",
+  ...lines,
+  "",
+  `${tr("waTotal")}: ${money(total())}`,
+  "",
+  `${tr("waName")}: ${name}`,
+  `${tr("waPhone")}: ${phone}`,
+  `${tr("waAddress")}: ${address}`,
+  ...(note?[`${tr("waNote")}: ${note}`]:[]),
+  "",
+  tr("waThanks")
+ ].join("\n");
+
+ openWhatsApp(message);
+});
+
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape"&&$("cartDrawer").classList.contains("open")){
+  closeCart();
+ }
+});
+
+$("year").textContent=new Date().getFullYear();
+applyLanguage();
+</script>
+</body>
+</html>
+
